@@ -8,37 +8,62 @@
     <link rel="stylesheet" href="./style.css">
     <title>FRP</title>
 </head>
-<body>
+<body>  <!--  onload="onload()"  -->
         <header>
             <div id="logo">logo</div>
-            <nav>nav bar</nav>
+            <nav>
+                <ul>
+                    <li><a href="#dc">Date Calculator</a></li>
+                    <li><a href="#tu">Time Until</a></li>
+                    <li><a href="#ca">Calender</a></li>
+                    <li><a href="#pt">Prayer Times</a></li>
+                    <li><a href="#bs">Brain Storming</a></li>
+                </ul>
+            </nav>
         </header>
     <hr>
         <section class="s1" id="dc">
-            <div id="dc-container">
-            <h3> Date Calculator </h3>
-            <div id="dc-input">
-                <div id="dc-from">
-                    <label for="dc-fdate">Start Date</label>
-                    <input type="date" id="dc-fdate">
+            <div class="containers" id="dc-container">
+                <h3> Date Calculator </h3>
+                <div id="dc-input">
+                    <div id="dc-from">
+                        <label for="dc-fdate">Start Date</label>
+                        <input type="date" id="dc-fdate">
+                    </div>
+                    <div id="dc-to">
+                        <label for="dc-tdate">End Date</label>
+                        <input type="date" id="dc-tdate">
+                    </div>
                 </div>
-                <div id="dc-to">
-                    <label for="dc-tdate">End Date</label>
-                    <input type="date" id="dc-tdate">
-                </div>
-            </div>
-                <div id="dc-btn">
-                    <button id="dc-submit" type="submit"> Confirm </button>
-                </div>
-                <div id="dc-output"> Select the dates to get started </div>
+                    <div class="confirm-btn" id="dc-btn">
+                        <button id="dc-submit" type="submit"> Confirm </button>
+                    </div>
+                    <div id="dc-output"> Select the dates to get started </div>
             </div>
         </section>
     <hr>
         <section class="s2" id="tu">
-            <p> time until </p>
+            <div class="containers" id="tu-container">
+                <h3> Time Until </h3>
+                <div>
+                    <label> From Now: </label>
+                    <label id="tu-now"></label>
+                    <p> (more options will be avilable soon) </p>
+                    <label hidden id="hiddinH"></label>
+                    <label hidden id="hideenSec"></label>
+                </div>
+                <div>
+                    <label for="tu-input"> To </label>
+                    <input type="time" name="" id="tu-input">
+                </div>
+                <div class="confirm-btn" id="tu-btn">
+                    <button id="tu-submit" type="submit"> Confirm </button>
+                </div>
+                <div id="tu-output"> Select the dates to get started </div>
+            </div>
         </section>
     <hr>
-        <section class="s3" id="c">
+        <section class="s3" id="ca">
             <p> calender </p>
         </section>
     <hr>

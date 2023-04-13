@@ -9,6 +9,25 @@ html {
     background-color: lightgray;
 }
 
+nav ul{
+    display: flex;
+    border: 2px black solid;
+}
+
+nav ul li {
+    border: 2px black solid;
+    display: grid;
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
 #bs {
     direction: rtl;
 }
@@ -17,7 +36,7 @@ ul {
     margin-right: 25px;
 }
 
-#dc-container {
+.containers {
     display: grid;
     justify-content: space-around;
     text-align: center;
@@ -27,7 +46,15 @@ ul {
     text-align: center;
 }
 
-#dc-submit {
+#dc-submit, #tu-submit {
+    padding: 2vw;
+    margin: 1vw;
+    border-radius: 25%;
+    border: none;
+    font-size: 15px;
+}
+
+.confirm-btn {
     padding: 2vw;
     margin: 1vw;
     border-radius: 25%;
@@ -54,7 +81,7 @@ ul {
 text-align: center;
 }
 
-#dc-output {
+#dc-output, #tu-output {
     text-align: center;
     margin: 2vw;
     padding: 1vw;
