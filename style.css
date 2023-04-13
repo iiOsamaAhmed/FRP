@@ -16,3 +16,8 @@ html {
 ul {
     margin-right: 25px;
 }
+
+#dc-container {
+    display: grid;
+    justify-content: space-around;
+}
