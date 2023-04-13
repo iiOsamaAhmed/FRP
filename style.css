@@ -20,4 +20,45 @@ ul {
 #dc-container {
     display: grid;
     justify-content: space-around;
+    text-align: center;
+}
+
+#dc-btn {
+    text-align: center;
+}
+
+#dc-submit {
+    padding: 2vw;
+    margin: 1vw;
+    border-radius: 25%;
+    border: none;
+    font-size: 15px;
+}
+
+#dc-input {
+    display: flex;
+}
+
+#dc-from, #dc-to {
+    display: grid;
+    margin: 2vw;
+}
+
+#dc-from input, #dc-to input {
+    margin: 1vw;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+#dc-container h3 {
+text-align: center;
+}
+
+#dc-output {
+    text-align: center;
+    margin: 2vw;
+    padding: 1vw;
+    border: 1px black;
+    border-radius: 10%;
+    border-style: dashed;
 }
